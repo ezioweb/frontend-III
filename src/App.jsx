@@ -1,7 +1,10 @@
 import { A2aAula } from './aulas/A2aAula'
 import { A3aAula } from './aulas/A3aAula'
 import { A4aAula } from './aulas/A4aAula'
+import { A5aAula } from './aulas/A5aAula'
+import { InstagramTimeLine } from './challenges/InstagramTimeLine'
 import { Header } from './pages/Header'
+import { VaporGames } from './pages/VaporGames'
 
 function App() {
   
@@ -11,10 +14,11 @@ function App() {
     // <Login></Login>
     // <SegundaAula />
     //<A3aAula />
+    //<InstagramTimeLine />
     // </> 
-    <>
-    <A3aAula />
-    </>  
+    
+    <VaporGames />
+     
   )
 }
 

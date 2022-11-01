@@ -2,44 +2,64 @@ import "./style.scss";
 import netflix1 from "./../../assets/netflix2.jpg";
 import netflix2 from "./../../assets/netflix22.jpg";
 import netflix3 from "./../../assets/netflix222.jpg";
+import { QuintaAulaItem } from "../../components";
 
-export function A4aAula() {
+export function A5aAula() {
   const componentsFinded = [
     {
       id: 1,
-      title: "Vídeo",
+      title: "Vídeo 1",
       image: netflix1,
       text: "Lorem, ipsum dolor sit amet consectetur",
     },
     {
       id: 2,
-      title: "Input",
+      title: "Vídeo 2",
       image: netflix2,
       text: "Eveniet quas eaque aliquid sequi debitis.",
     },
     {
       id: 3,
-      title: "Terceiro",
+      title: "Vídeo 3",
       image: netflix3,
       text: "Nonononononon ononon non nononon onononon ononon.",
-    },
+    },{
+        id: 1,
+        title: "Série 1",
+        image: netflix1,
+        text: "Lorem, ipsum dolor sit amet consectetur",
+      },
+      {
+        id: 2,
+        title: "Série 2",
+        image: netflix2,
+        text: "Eveniet quas eaque aliquid sequi debitis.",
+      },
+      {
+        id: 3,
+        title: "Série 3",
+        image: netflix3,
+        text: "Nonononononon ononon non nononon onononon ononon.",
+      }
   ];
 
   return (
     <div className="quarta-aula-component">
       <h1 className="main-title">Componentes identificados</h1>
+      
+
+      {    
       <ul className="components-finded">
-        {/* código javascript */}
+        
         {componentsFinded.map((component) => {
           return (
-            <li key={component.id}>
-              <img src={component.image} alt="" />
-              <h1>{component.title}</h1>
-              <p>{component.text}</p>
-            </li>
+            <QuintaAulaItem 
+            key={component.id} 
+            item={component}
+            />
           );
         })}
-      </ul>
+      </ul>}
     </div>
   );
 }
