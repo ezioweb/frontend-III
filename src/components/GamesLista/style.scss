@@ -20,6 +20,10 @@
        font-weight: 700;
        line-height: 28px;
        font-size: 32px;
+       .min{
+        font-size: 24px;
+       }
+       
     }
     .text-list{
         padding-left: 24px;
@@ -34,4 +38,5 @@
         display: flex;
         gap: 12px;
     }
+    
 }

@@ -15,7 +15,7 @@ export function GamesLista(props) {
                     return <a key={index}>{category}</a>
                 }
             )}</span>
-              <h4>{props.item.price}</h4>
+              <h4>{props.item.price}<span className='min'></span>,00</h4>
               </card>
            </li>
 

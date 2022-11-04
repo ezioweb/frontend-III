@@ -8,7 +8,7 @@ export function VaporGames() {
       name: "Hollow Knight",
       plataforms: ["windows"],
       categories: ["Metroidvania", "Souls-like", "Platformer2D"],
-      price: "<span>R$<b>20<b/>,00</span>",
+      price: "20",
       picture:
         "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
     },
