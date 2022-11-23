@@ -1,0 +1,78 @@
+*:focus{
+    outline: none;
+}
+h2{
+    margin-top: 20px;
+}
+.to-do-component{
+    form {
+        display: flex;
+        flex-direction: column;
+        background-color: #4d4d4d;
+        padding:  42px;
+        gap: 12px;
+        border-radius: 12px;
+
+        &.form-error{
+            background-color: #442626;
+            .form-controller{
+                input{
+                    background-color: #dc5353;
+                }
+                small{
+                    color: #dc5353;
+                    opacity: 1;
+                }
+            }
+        }
+        .form-controller{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            label{
+                font-size: 14px;
+                opacity: .8;
+            }
+            small{
+                transition: .2s;
+                opacity: 0;
+                cursor: default;
+            }
+            input{
+                color: white;
+                background-color: #353535;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 12px;
+                opacity: .8;
+                transition: .2s;
+            }
+        }
+        button{
+            color: white;
+            background-color: #4cde9a;
+            font-size: 16px;
+            width: fit-content;
+            padding: 12px 24px;
+            border-radius: 12px;
+            border: none;
+            align-self: flex-end;
+            opacity: .6;
+            margin-top: 24px;
+            transition: .2s;
+
+            &:hover{
+                opacity: 1;
+                box-shadow: 0 0 10px #4cde9a;
+                cursor: pointer;
+            }
+
+            &:disabled{
+                opacity: .4;
+                box-shadow: none;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

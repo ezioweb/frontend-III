@@ -2,6 +2,7 @@ import "./style.scss";
 import netflix1 from "./../../assets/netflix2.jpg";
 import netflix2 from "./../../assets/netflix22.jpg";
 import netflix3 from "./../../assets/netflix222.jpg";
+import { QuintaAulaItem } from "../../components/QuintaAulaItem";
 
 export function A4aAula() {
   const componentsFinded = [
@@ -32,11 +33,13 @@ export function A4aAula() {
         {/* código javascript */}
         {componentsFinded.map((component) => {
           return (
+
             <li key={component.id}>
               <img src={component.image} alt="" />
               <h1>{component.title}</h1>
               <p>{component.text}</p>
             </li>
+            
           );
         })}
       </ul>

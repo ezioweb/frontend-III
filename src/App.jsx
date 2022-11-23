@@ -4,24 +4,64 @@ import { A4aAula } from './aulas/A4aAula'
 import { A5aAula } from './aulas/A5aAula'
 import { A7aAula } from './aulas/A7aAula'
 import { A8aAula } from './aulas/A8aAula'
+import { A10aAula } from './aulas/A10aAula'
 import { InstagramTimeLine } from './challenges/InstagramTimeLine'
 import { Header } from './pages/Header'
 import { VaporGames } from './pages/VaporGames'
+import { PedidoPizza } from './aulas/A10aAula/PedidoPizza'
+import { A14aAula } from './aulas/A14aAula'
+import { A15aAula } from './aulas/A15aAula'
+import { A16aAula } from './aulas/A16aAula'
+//importação da estrutura
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from "react-router-dom";
+import { MainLayout } from './components/MainLayout'
+import { ToDo } from './pages/ToDo'
+
 
 function App() {
+  const appRouter = createBrowserRouter([
+    {
+      path: '',
+      element: <ToDo/>
+    },
+    // {
+    //   path: '', 
+    //   element: <MainLayout />,
+    //   children: [
+    //     {
+    //       path: '',
+    //       element: <Header/> 
+    //     },
+    //     {
+    //       path: 'decima-quarta-aula',
+    //       element: <A14aAula/>          
+    //     },
+    //     {
+    //       path: 'decima-quinta-aula',
+    //       element: <A15aAula/>
+    //     }
+       
+    //   ]
+    // }
+    
+  ])
   
   return (
     // <>
     // <Header />
     // <Login></Login>
     // <SegundaAula />
-    //<A3aAula />
+    //<A7aAula />
     //<InstagramTimeLine />
     // </> 
     
     // <VaporGames />
-    <A8aAula />
-     
+    
+    <RouterProvider router={appRouter} /> 
   )
 }
 

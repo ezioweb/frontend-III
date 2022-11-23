@@ -1,0 +1,97 @@
+.task-component {
+
+    background-color: #353535;
+    padding: 32px;
+    border-radius: 12px;
+    margin-top: 20px;
+
+    h2 {
+
+        opacity: .8;
+
+    }
+    .task-controller{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        label{
+            font-size: 14px;
+            opacity: .8;
+            margin-right: 20px;
+        }
+        small{
+            transition: .2s;
+            opacity: 0;
+            cursor: default;
+        }
+        input{
+            color: white;
+            background-color: #353535;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 12px;
+            opacity: .8;
+            transition: .2s;
+        }
+    }
+    button {
+
+        color: white;
+        font-size: 16px;
+        width: fit-content;
+        padding: 8px 24px;
+        border-radius: 12px;
+        border: none;
+        align-self: flex-end;
+        opacity: .6;
+        margin-top: 32px;
+        transition: .2s;
+
+        &.delete {
+
+            background-color: #ca0f38;
+
+        }
+
+        &.edit {
+
+            background-color: #3aa9dd;
+
+        }
+
+        &.finish {
+
+            background-color: #de9f4c;
+
+        }
+        &.update{
+            background-color: #981beb;
+        }
+
+        &:hover {
+
+            opacity: 1;
+            box-shadow: 0 0 10px #c0c0c058;
+            cursor: pointer;
+
+        }
+
+        &:disabled {
+
+            opacity: .4;
+            box-shadow: none;
+            cursor: not-allowed;
+
+        }
+
+    }
+
+    .buttons {
+
+        display: flex;
+        gap: 12px;
+
+    }
+
+}

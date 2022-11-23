@@ -2,7 +2,7 @@ import "./style.scss";
 import netflix1 from "./../../assets/netflix2.jpg";
 import netflix2 from "./../../assets/netflix22.jpg";
 import netflix3 from "./../../assets/netflix222.jpg";
-import { QuintaAulaItem } from "../../components";
+import { QuintaAulaItem } from "../../components/QuintaAulaItem";
 
 export function A5aAula() {
   const componentsFinded = [
