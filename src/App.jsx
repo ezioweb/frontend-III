@@ -11,7 +11,7 @@ import { VaporGames } from './pages/VaporGames'
 import { PedidoPizza } from './aulas/A10aAula/PedidoPizza'
 import { A14aAula } from './aulas/A14aAula'
 import { A15aAula } from './aulas/A15aAula'
-import { A16aAula } from './aulas/A16aAula'
+
 //importação da estrutura
 import {
   createBrowserRouter,
@@ -25,28 +25,60 @@ import { ToDo } from './pages/ToDo'
 function App() {
   const appRouter = createBrowserRouter([
     {
-      path: '',
+      path: 'to-do',
       element: <ToDo/>
     },
-    // {
-    //   path: '', 
-    //   element: <MainLayout />,
-    //   children: [
-    //     {
-    //       path: '',
-    //       element: <Header/> 
-    //     },
-    //     {
-    //       path: 'decima-quarta-aula',
-    //       element: <A14aAula/>          
-    //     },
-    //     {
-    //       path: 'decima-quinta-aula',
-    //       element: <A15aAula/>
-    //     }
+    {
+      path: '', 
+      element: <MainLayout />,
+      children: [
+        {
+          path: '',
+          element: <Header/> 
+        }, 
+        {
+          path: 'home',
+          element: <Header/> 
+        }, 
+        {
+          path: 'segunda-aula',
+          element: <A2aAula/>          
+        },
+        {
+          path: 'terceira-aula',
+          element: <A3aAula/>          
+        },
+        {
+          path: 'quarta-aula',
+          element: <A4aAula/>          
+        },
+        {
+          path: 'quinta-aula',
+          element: <A5aAula/>          
+        },
+        {
+          path: 'setima-aula',
+          element: <A7aAula/>          
+        },       
+        {
+          path: 'oitava-aula',
+          element: <A8aAula/>          
+        },        
+        {
+          path: 'decima-aula',
+          element: <A10aAula/>          
+        },
+        {
+          path: 'decima-quarta-aula',
+          element: <A14aAula/>          
+        },
+        {
+          path: 'decima-quinta-aula',
+          element: <A15aAula/>
+        }
        
-    //   ]
-    // }
+      ]
+    }
     
   ])
   
@@ -55,7 +87,7 @@ function App() {
     // <Header />
     // <Login></Login>
     // <SegundaAula />
-    //<A7aAula />
+    //<A10aAula />
     //<InstagramTimeLine />
     // </> 
     

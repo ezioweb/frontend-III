@@ -1,16 +1,66 @@
 .main-layout-component {
 
     .main-layout-component-header {
-
+        height: 10vh;
         background-color: #404040;
-        padding: 42px;
-        margin-bottom: 12px;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+        h1{
+            font-size: 24px;
+            
+            padding-left: 24px;
+            
+            
+        }
+        nav{
+            display: flex;
+            justify-content: flex-end;
+            padding: 2em;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+        
+        }
+        a{
+            position: relative;
+            display: inline-block;
+            padding: 1em;
+            text-decoration: none;
+            &:hover{
+                color: darkgray;
+                transform: scale(120%);
 
+            }
+        }
+
+        
     }
+   
+@media all and (max-width: 800px){
+    ul{ 
+        flex-grow: 1;
+        justify-content: space-between;
+    } 
+    h1{
+        opacity: 0;
+    }   
+}
+@media all and (max-width: 600px){
+    ul{
+       font-size: 14px;
+    }    
+}
+    
 
     .main-layout-component-main {
 
-        background-color: #505050;
+        background-color: #080808;
         padding: 42px;
 
     }
