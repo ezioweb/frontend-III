@@ -20,7 +20,6 @@ import {
 } from "react-router-dom";
 import { MainLayout } from './components/MainLayout'
 import { ToDo } from './pages/ToDo'
-import { CepPost } from './pages/CepPosts'
 
 
 function App() {
@@ -76,12 +75,7 @@ function App() {
         {
           path: 'decima-quinta-aula',
           element: <A15aAula/>
-        },
-        {
-          path: 'cep-app',
-          element: <CepPost/>
         }
-        
         
        
       ]

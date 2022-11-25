@@ -1,0 +1,21 @@
+*:focus {
+  outline: none;
+}
+h2 {
+  margin-top: 20px;
+}
+.to-do-component {
+  display: flex;
+  flex-direction: column;
+  background-color: #4d4d4d;
+  padding: 42px;
+  gap: 12px;
+  border-radius: 12px;
+  h1 {
+    font-size: 18px;
+    color: #202020;
+  }
+  p {
+    background-color: #4d4d4d;
+  }
+}
